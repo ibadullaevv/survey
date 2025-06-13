@@ -27,11 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['survey.urdu.uz', 'www.survey.urdu.uz']
-
+CSRF_TRUSTED_ORIGINS = ["https://survey.urdu.uz", "https://www.survey.urdu.uz"]
 
 # Application definition
 
 INSTALLED_APPS = [
+    'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
