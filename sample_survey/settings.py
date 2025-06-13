@@ -25,8 +25,8 @@ SECRET_KEY = 'bh-+xvs)tw0b*vuuw7f@(z%9a)jo%^dq=^!ame@$rrh2ay2)^t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = ['survey.urdu.uz', 'www.survey.urdu.uz']
+# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['survey.urdu.uz', 'www.survey.urdu.uz']
 CSRF_TRUSTED_ORIGINS = ["https://survey.urdu.uz", "https://www.survey.urdu.uz"]
 
 # Application definition
