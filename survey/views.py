@@ -117,7 +117,7 @@ def submit_survey(request):
     if survey is not None:
         participant = Participant(survey=survey, participation_datetime=timezone.now())
         participant.save()
-    return redirect('/survey/submit_success/')
+    return redirect('/submit_success/')
 
 
 @require_http_methods(["GET"])

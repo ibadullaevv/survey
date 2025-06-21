@@ -2,7 +2,7 @@
   <h5 class="card-header">{{survey.name}}</h5>
   <div class="card-body">
       <p class="card-text">Kindly fill in the survey and submit to participate</p>
-      <form action="/survey/submit_survey/" method="post">
+      <form action="/submit_survey/" method="post">
       {% csrf_token %}
       {% for question in survey.question_set.all %}
           <fieldset class="form-group">
